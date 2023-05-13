@@ -1,3 +1,9 @@
+<!--
+
+Created By SUPARNA DAS
+ 
+--> 
+
 <?php
  include 'conn.php';
  include 'header.php';
@@ -38,6 +44,12 @@ header('location:all_customer.php');
  }
 
 ?>
+
+<!--
+
+Created By SUPARNA DAS
+ 
+--> 
 
 <!DOCTYPE html>
 <html>
