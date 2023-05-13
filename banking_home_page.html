@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="external.js"></script>
+  <title>The Evershine Foundation - Bank Management System</title>
+  <style>
+  * {
+    font-size: 17px;
+   }
+ 
+  a,.nav_link{color: black;}
+  .bank_name {
+    font-family: 'Lobster';
+  }
+ a{text-decoration: none;}
+  nav {
+    -webkit-box-shadow: 6px 9px 5px 0px rgba(212, 210, 212, 1);
+    -moz-box-shadow: 6px 9px 5px 0px rgba(212, 210, 212, 1);
+    box-shadow: 6px 9px 5px 0px rgba(212, 210, 212, 1);
+  
+    color: black;
+  }
+
+  li {
+    padding: 0px 0px 0px 30px;
+  }
+
+  #col1 {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 3s;
+    animation-name: animatebottom;
+    animation-duration: 4s
+  }
+  #col2 {
+    position: relative;
+    -webkit-animation-name: rightanimate;
+    -webkit-animation-duration: 3s;
+    animation-name: rightanimate;
+    animation-duration: 4s
+  }
+  @media screen and (min-width: 602px){
+    .about_us{
+    margin: 0px 30px 0px 30px;
+  }
+  }
+
+  @-webkit-keyframes animatebottom {
+    from {
+      left: -170px;
+      opacity: 0
+    }
+
+    to {
+      left: 0px;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatebottom {
+    from {
+      left: -170px;
+      opacity: 0
+    }
+
+    to {
+      left: 0px;
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes rightanimate {
+    from {
+      right: -170px;
+      opacity: 0
+    }
+
+    to {
+      right: 0px;
+      opacity: 1
+    }
+  }
+
+  @keyframes rightanimate {
+    from {
+      right: -170px;
+      opacity: 0
+    }
+
+    to {
+      right: 0px;
+      opacity: 1
+    }
+  }
+
+  strong {
+    font-size: 25px;
+  }
+  </style>
+
+</head>
+
+<body>
+  <div id="hometop"></div>
+  <nav class="navbar navbar-expand-lg bg-white text-black fixed-top">
+    <div class="container-fluid" style="font-weight: bold;">
+      <a style="color: black" class="navbar-brand" href="banking_home_page.html"><img
+          src="https://media.licdn.com/dms/image/C560BAQFgHU3sTF4LfQ/company-logo_200_200/0/1519895156650?e=2147483647&v=beta&t=e6J4j8gWdNCJ-Dhu6xEC2S3EB_6lcim27ymu6-zRQkg"
+          alt="logo" width="50px"><strong>&nbsp;&nbsp;THE EVERSHINE BANK</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a style="color: black" class="nav-link text-black active" aria-current="page" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link text-black" href="#about">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link text-black" href="#features">FEATURES</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a style="color: black" class="nav-link text-black dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CUSTOMER
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a style="color: black" class="dropdown-item" href="individual_acc.php">View Individual Account&nbsp;</a></li>
+              <li><a style="color: black" class="dropdown-item" href="all_customer.php">View All Customer Details&nbsp;</a></li>
+              <li><a style="color: black" class="dropdown-item" href="all_transaction.php">View Transaction History&nbsp;</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a style="color: black" class="nav-link text-black" href="#footer_sec">CONTACT US</a>          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <span id="home"></span>
+ 
+
+<div id="homesec" style="margin-top:70px;">
+  <div class="container">
+    <div class="row align-items-start" style="margin: 0px 50px 0px 0px;">
+
+      <div class="col-sm-6" class="intro" id="col1"> <br><br><br>
+        <h1 style="font-size: 50px;" class="bank_name">The Evershine Bank</h1>
+        <h3>Welcome To The World Of Finance</h3><br>
+        <h6>Banking is fascinating. It provide the lifeblood of capitalism namely credit and also its history is uniquely coherent.</h6>
+        <img
+          src="https://img.freepik.com/free-vector/personal-finance-concept-illustration_114360-5523.jpg?size=626&ext=jpg&ga=GA1.1.1023083493.1682422864&semt=sph"
+          width="300px" height="200px">
+      </div>
+      <div class="col-sm-6" class="">
+        <div><br>
+          <img id="col2"
+            src="https://i0.wp.com/getborderless.com/wp-content/uploads/2020/07/wire-fees-blog-image.png?fit=683%2C438&ssl=1"
+            width="700px" height="500px">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <span id="about"></span><br><br><br><br>
+
+  <div class="container" style="font-family: Arial, Helvetica, sans-serif">
+
+    <h1 class="mb-5 text-center btn-primary">ABOUT US</h1>
+
+    <div class="row text-center">
+      <div class="col-lg-6 col-md-12 mb-6">
+        <div class="card">
+          <div class="card-body">
+            <img
+                src="https://img.freepik.com/free-vector/mobile-banking-concept-illustration_114360-12788.jpg?size=626&ext=jpg&ga=GA1.2.1023083493.1682422864&semt=sph"
+                width="450px" height="355px" alt="bank">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 mb-6">
+        <div class="card">
+          
+          <h6 align="left" style="margin-left: 30px;">
+            <br>
+            The <b>Evershine Bank</b> is a <b>financial institution</b> which 
+            <br><ul>
+               <li>Accepts deposits</li>
+               <li>Pays interest on pre-defined rates</li>
+               <li>Clears checks</li>
+               <li>Makes loans</li>
+               <li>Often acts as an intermediary in financial transactions</li>               
+               <li>Provides other financial services to its customers</li>
+              </ul> 
+                <b>Bank management</b> governs various concerns associated with bank in order to maximize profits. The
+                concerns broadly include 
+                <ul>
+                <li>Liquidity management</li>
+                <li>Asset management</li>
+                <li>Liability management </li>
+                <li>capital management</li>
+                </ul>
+                The <b>Evershine Bank</b> accept deposits from <br>
+                the general public and from the business community as well and 
+                give two assurances to the depositors.<br>
+          </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br>
+    <div class="row text-center">
+      <div class="col-lg-6 col-md-6 mb-6">
+        <div class="card" style="margin-left:100px">
+          <div class="card-body">
+          <h6 align="left">
+                The <b>essential function</b> of the bank is 
+                <ul>
+                <li>To receive deposits</li>
+                <li>To transfer funds</li>
+                <li>To withdraw money</li>
+                <li>To grant loans</li>
+                </ul>
+                These <b>deposits</b> are received as 
+                <ul>
+                <li>Fixed deposits- which have a limited time frame</li>
+                <li>Current deposits- require 
+                no interests and are framed mainly for business people</li>
+                <li>Savings bank deposits
+                to encourage savings with a 5 percent interest rate</li>
+                </ul>
+                The bank also provides <b>Safe Custody</b> of valuables such as deeds, ornaments, 
+                <br>documents, jewels, etc. It also sells and purchases stocks, shares, etc.<br><br>
+                The bank is essential as it provides <b>Credit information</b> and a <b>Letter of Credit</b> and 
+                acts as representatives and makes correspondence.
+          </h6>
+            </div>
+          </div>
+
+        </div>
+      <div class="col-lg-6 col-md-12 mb-6">
+        <div class="card" style="margin-right:100px">
+          <div class="card-body">
+            <img
+                src="https://img.freepik.com/free-vector/banking-industry-concept-illustration_114360-13934.jpg?size=626&ext=jpg&ga=GA1.1.1023083493.1682422864&semt=ais" 
+                height="368px" width="555px"  alt="" srcset="">
+
+          </div>
+        </div>
+      </div>
+      </div>
+   </div>
+
+
+
+  </div>
+
+
+  <span id="features"></span><br><br><br><br>
+
+  <div class="container">
+
+    <h1 class="mb-5 text-center btn-primary">FEATURES</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img
+              src="https://img.freepik.com/free-vector/wealth-management-safety-cash-savings-isometric-composition-dark_1284-31468.jpg?size=626&ext=jpg&ga=GA1.2.1023083493.1682422864&semt=ais"
+              height="100px" class="img-fluid" />
+
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Safe Deposit Boxes</h5>
+            <p class="card-text">
+              A safe deposit box is an individually secured container that stays in the safe or
+              vault of a federally insured bank or credit union.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img
+              src="https://img.freepik.com/premium-vector/bank-with-rupee-bundle-money-bag-coin-showing-npa-bad-loan-concept-vector-illustration_667085-2.jpg?size=626&ext=jpg&ga=GA1.2.1023083493.1682422864&semt=ais"
+              height="500px" class="img-fluid" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Transfer of funds</h5>
+            <p class="card-text">
+              A Funds Transfer is a sequence of events that results in the movement of funds from the remitter to the
+              beneficiary.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" style="height:100%">
+          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light"><br><br>
+            <img src="https://img.freepik.com/free-vector/man-withdrawing-his-money-from-bank_52683-38066.jpg?w=2000"
+              height="550px" class="img-fluid" />
+          </div>
+          <div class="card-body"><br><br><br>
+            <h5 class="card-title">Provide Demand Withdrawal</h5>
+            <p class="card-text">
+              Demand deposits or current deposits refers to the deposits with the commercial banks which can be
+              withdrawn on demand of the account holder.<br>  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+  <span id="footer_sec"></span><br><br><br><br>
+
+  
+  <footer class="text-white text-center text-lg-start bg-danger">
+    <div class="container p-4">
+      <div class="row align-items-start">
+        <div class="col-sm-4">
+          <a class="navbar-brand" href="banking_home_page.html"><img
+            src="https://media.licdn.com/dms/image/C560BAQFgHU3sTF4LfQ/company-logo_200_200/0/1519895156650?e=2147483647&v=beta&t=e6J4j8gWdNCJ-Dhu6xEC2S3EB_6lcim27ymu6-zRQkg"
+            alt="logo" width="50px">
+            <strong class="text-white">&nbsp;&nbsp;THE EVERSHINE BANK</strong><br><br>
+          </a>
+          <span>Bhikaji Cama Place, Office Complex, Rama Krishna Puram, New Delhi<br>
+            Contact No: +91 1234567890<br>
+            Email ID : evershinebank@email.com
+          </span>
+        </div>
+          <div class="col-sm-8 text-center">
+            <div class="d-flex" style="margin-left:50px">
+              <a href="#home" class="text-white fw-bold" style="padding: 20px;">HOME</a>
+              <a href="#about" class="text-white fw-bold" style="padding: 20px;">ABOUT</a>
+              <a href="#features" class="text-white fw-bold" style="padding: 20px;">FEATURES</a>
+              <a href="#footer_sec" class="text-white fw-bold" style="padding: 20px;">CONTACT US</a>
+            </div>
+            <br>
+            <section style="margin-right: 300px;">
+              <a class="btn btn-outline-light btn-floating m-1" role="button"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-floating m-1" role="button"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-floating m-1" role="button"
+                ><i class="fa fa-google"></i
+              ></a>
+
+              <a class="btn btn-outline-light btn-floating m-1" role="button"
+                ><i class="fa fa-instagram"></i
+              ></a>
+
+              <a class="btn btn-outline-light btn-floating m-1" role="button"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </section>
+          </div>
+      </div>
+
+
+      <div style="float:right;margin-top:-40px;">
+        <a href="#hometop" class="text-white"><h3>To Top <i class="fa fa-chevron-up"></i></h3></a>
+      </div>
+    </div>
+    <br>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 The Evershine Bank Copyright
+    </div>
+
+  </footer>
+
+<script>
+      document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
+</script>
+  
+</body>
+
+</html>
